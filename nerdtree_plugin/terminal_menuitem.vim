@@ -18,7 +18,7 @@ function! NERDTreeTerminalSearch()
   let treenode = g:NERDTreeFileNode.GetSelected()
   let path = treenode.path.str()
 
-  let s:cmd = 'T '.path
+  let s:cmd = 'TTerm cd '.path.' ; bash '
   execute s:cmd
 
   let &shellslash=l:oldssl
