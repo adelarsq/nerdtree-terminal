@@ -8,7 +8,7 @@ let s:haskdeinit = system("ps -e") =~ 'kdeinit'
 let s:hasdarwin = system("uname -s") =~ 'Darwin'
 
 call NERDTreeAddMenuItem({
-      \ 'text': '(t)erminal',
+      \ 'text': '(t)erminal '.emoji#for('shell'),
       \ 'shortcut': 't',
       \ 'callback': 'NERDTreeTerminalSearch' })
 
